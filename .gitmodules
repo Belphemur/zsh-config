@@ -4,3 +4,6 @@
 [submodule "thirdparty/git-aliases"]
 	path = thirdparty/git-aliases
 	url = https://github.com/peterhurford/git-aliases.zsh.git
+[submodule "thirdparty/n-navigation"]
+	path = thirdparty/n-navigation
+	url = https://github.com/psprint/zsh-navigation-tools.git

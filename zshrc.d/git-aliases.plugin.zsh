@@ -1,1 +1,0 @@
-../thirdparty/git-aliases/git-aliases.plugin.zsh
