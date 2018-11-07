@@ -1,7 +1,7 @@
 # vim: ts=4 sw=4
 HISTFILE=~/.zsh_history
-HISTSIZE=30000
-SAVEHIST=25000
+HISTSIZE=10000
+SAVEHIST=15000
 
 
 autoload -U history-search-end
