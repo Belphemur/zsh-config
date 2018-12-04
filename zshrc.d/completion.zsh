@@ -18,8 +18,10 @@ zstyle ':completion:*' menu select
 # Verbose completion results
 zstyle ':completion:*' verbose true
 
-# Smart matching of dashed values, e.g. f-b matching foo-bar
-zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*'
+# Smart matching of dashed values, e.g. f-b matching foo-bar & partial match
+zstyle ':completion:*' completer _complete
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*' 'r:|[._-]=* r:|=*'
+
 
 # Group results by category
 zstyle ':completion:*' group-name ''
