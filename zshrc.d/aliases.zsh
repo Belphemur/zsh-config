@@ -10,7 +10,7 @@ alias ...='cd ../..'
 
 alias l='ls -l'
 alias ll='ls -al'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -N'
 
 type hub > /dev/null && alias git='hub'
 alias dmesg='dmesg --color --reltime'
@@ -19,3 +19,6 @@ alias alf='autoload -Uz'
 
 # Gentoo specific
 alias euses='euses -c'
+
+# Use a decent httpie style
+alias http='http --style=solarized'
