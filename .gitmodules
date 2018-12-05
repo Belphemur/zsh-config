@@ -1,3 +1,9 @@
 [submodule "thirdparty/zsh-git-escape-magic"]
 	path = thirdparty/zsh-git-escape-magic
 	url = https://github.com/knu/zsh-git-escape-magic
+[submodule "thirdparty/git-aliases"]
+	path = thirdparty/git-aliases
+	url = https://github.com/peterhurford/git-aliases.zsh.git
+[submodule "thirdparty/zaw"]
+	path = thirdparty/zaw
+	url = https://github.com/zsh-users/zaw.git

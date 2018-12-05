@@ -20,3 +20,9 @@ _custom_zsh_config_loaded=1
 for file ($_custom_zsh_config_base/zshrc.d/*.zsh(N)); do
 	source $file
 done
+
+#Third-parties
+
+for file ($_custom_zsh_config_base/thirdparty/**/*.plugin.zsh(N)); do
+        source $file
+done
