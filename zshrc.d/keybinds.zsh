@@ -82,12 +82,27 @@ zle -N _forward-kill-arg
 zle -N _backward-kill-word
 zle -N _backward-kill-path
 
+<<<<<<< HEAD
 bindkey '\C-[OD'	_backward-word		# ctrl-left
 bindkey '\C-[OC'	_forward-word		# ctrl-right
+=======
+# optionally support putty-style cursor keys (application mode when ctrl is pressed).
+# this is kind of broken in normal linux terminals that often use application mode by
+# default, so we have to make it opt-in. if you use putty, you may want to patch it to
+# send proper escape sequences for ctrl/alt/shift+cursor key combinations.
+if [[ _custom_zsh_putty_cursor_keys == 1 ]]; then
+	bindkey '\C-[OD'	_backward-word	# ctrl-left
+	bindkey '\C-[OC'	_forward-word	# ctrl-right
+fi
+
+bindkey "\e[1;5D"	_backward-word		# ctrl-left
+bindkey "\e[1;5C"	_forward-word		# ctrl-right
+>>>>>>> 366b627ba68c3f6d3d38e570cbad1cc3c6637e12
 bindkey '\e\e[D'	_backward-arg		# alt-left
 bindkey '\e\e[C'	_forward-arg		# alt-right
 bindkey '\e\C-?'	_backward-kill-arg	# alt-backspace
 bindkey '\e\e[3~'	_forward-kill-arg	# alt-del
+bindkey '\e[3;3~'	_forward-kill-arg	# alt-del
 bindkey '\C-w'		_backward-kill-word
 bindkey '\C-f'		_backward-kill-path
 
