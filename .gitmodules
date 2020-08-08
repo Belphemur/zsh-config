@@ -7,3 +7,6 @@
 [submodule "thirdparty/zaw"]
 	path = thirdparty/zaw
 	url = https://github.com/zsh-users/zaw.git
+[submodule "thirdparty/zsh-syntax-highlighting"]
+	path = thirdparty/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
