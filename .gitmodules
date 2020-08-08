@@ -10,3 +10,6 @@
 [submodule "thirdparty/01-zsh-history-substring-search"]
 	path = thirdparty/01-zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "thirdparty/02-zsh-navigation-tools"]
+	path = thirdparty/02-zsh-navigation-tools
+	url = https://github.com/psprint/zsh-navigation-tools.git
