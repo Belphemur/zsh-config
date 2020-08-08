@@ -1,2 +1,0 @@
-
-bindkey '^R' zaw-history
