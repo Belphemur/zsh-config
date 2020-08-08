@@ -26,3 +26,8 @@ done
 for file ($_custom_zsh_config_base/thirdparty/**/*.plugin.zsh(N)); do
         source $file
 done
+
+#Third party config
+for file ($_custom_zsh_config_base/thirdparty.conf.d/*.zsh(N)); do
+        source $file
+done
